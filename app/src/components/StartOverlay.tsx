@@ -59,7 +59,7 @@ export function StartOverlay({ onStart, onFileSelect }: StartOverlayProps) {
       {/* Logo */}
       <div className="mb-8 md:mb-12">
         <img
-          src="/logo.png"
+          src="./logo.png"
           alt="Visual of Comfort"
           className="h-36 md:h-48 w-auto object-contain"
           draggable={false}

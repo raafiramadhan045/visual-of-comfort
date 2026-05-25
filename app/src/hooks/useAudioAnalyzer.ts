@@ -214,7 +214,7 @@ export function useAudioAnalyzer() {
       await resumeContext();
       stopCurrentSource();
 
-      const response = await fetch('/demo-audio.mp3');
+      const response = await fetch('./demo-audio.mp3');
       if (!response.ok) {
         throw new Error('Demo audio not found');
       }
