@@ -1,0 +1,84 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-poppins: 'Poppins', system-ui, -apple-system, sans-serif;
+    --font-poppins-mono: 'Poppins', ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace;
+    --background: 240 24% 4%;
+    --foreground: 210 40% 98%;
+    --card: 240 24% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 240 24% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 15 87% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 215 16% 57%;
+    --accent: 187 94% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 348 90% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 262 83% 58% / 0.15;
+    --input: 240 3.7% 15.9%;
+    --ring: 15 87% 54%;
+    --radius: 0.625rem;
+  }
+
+  html, body {
+    font-family: var(--font-poppins);
+    background: #f05423;
+    color: #f8fafc;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+/* Custom slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f05423;
+  cursor: pointer;
+  box-shadow: none;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f05423;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
